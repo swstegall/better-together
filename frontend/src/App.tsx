@@ -4,21 +4,24 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={"container-fluid"} style={{ minHeight: "100vh", overflow: "hidden" }}>
+      <div className={"row"}>
+        <div className={"col-3"} style={{ minHeight: "100vh", backgroundColor: "#ff0000" }}>
+          Sidebar
+        </div>
+        <div className={"col-9"}>
+          <div className={"row"} style={{ minHeight: "50vh", backgroundColor: "#gg0000" }}>
+            <div className={"col"}>
+            My Stats
+            </div>
+          </div>
+          <div className={"row"} style={{ minHeight: "50vh", backgroundColor: "#bb0000" }}>
+            <div className={"col"}>
+           Team Stats
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
