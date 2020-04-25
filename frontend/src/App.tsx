@@ -1,5 +1,6 @@
 import React from "react";
 import { TeamStats } from "./components/teamstats/teamstats";
+import { MyStats } from "./components/mystats/mystats";
 
 const App = () => {
   return (
@@ -19,7 +20,9 @@ const App = () => {
             className={"row"}
             style={{ minHeight: "50vh", backgroundColor: "#DDFFDD" }}
           >
-            <div className={"col"}>My Stats</div>
+            <div className={"col"}>
+              <MyStats />
+            </div>
           </div>
           <div
             className={"row"}
