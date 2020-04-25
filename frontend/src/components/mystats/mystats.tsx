@@ -5,19 +5,25 @@ import { MyStatsHeader } from "./mystatsheader/mystatsheader";
 
 export const MyStats = () => {
   return (
-    <div style={{ backgroundColor: "#DDDDFF" }}>
-      <div className={"row no-gutters justify-content-end"}>
+    <div style={{paddingTop: "1%", height: "50vh" }}>
+      <div>
         <MyStatsHeader />
       </div>
-      <div className={"row no-gutters pt-5"}></div>
-      <div className={"row no-gutters pt-5"} style={{ minHeight: "45vh" }}>
-        <div className={"col"}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-evenly",
+        }}
+      >
+        <div style={{paddingTop: "7%", height: "500px", width: "500px" }}>
           <MyStatsLineChart />
         </div>
-        <div className={"col"}>
+        <div style={{paddingTop: "7%", height: "500px", width: "500px" }}>
           <MyStatsLineChart />
         </div>
-        <div className={"col"}>
+        <div style={{paddingTop: "7%", height: "500px", width: "500px" }}>
           <MyStatsTable />
         </div>
       </div>

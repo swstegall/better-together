@@ -5,22 +5,24 @@ import { Sidebar } from "./components/sidebar/sidebar";
 
 const App = () => {
   return (
-    <div className={"container-fluid px-0"} style={{minHeight: "100vh", maxHeight: "100vh", overflow: "hidden"}}>
-      <div className={"row no-gutters"}>
-        <div className={"col-3"}>
-          <Sidebar />
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        minHeight: "100vh",
+        maxHeight: "100vh",
+        overflow: "hidden"
+      }}
+    >
+      <div style={{ width: "25vw" }}>
+        <Sidebar />
+      </div>
+      <div style={{ width: "75vw" }}>
+        <div>
+          <MyStats />
         </div>
-        <div className={"col"}>
-          <div>
-            <div>
-              <MyStats />
-            </div>
-          </div>
-          <div>
-            <div>
-              <TeamStats />
-            </div>
-          </div>
+        <div>
+          <TeamStats />
         </div>
       </div>
     </div>
