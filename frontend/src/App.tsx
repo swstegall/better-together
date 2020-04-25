@@ -19,7 +19,7 @@ const App = () => {
         <div className={"col-9"}>
           <div
             className={"row"}
-            style={{ minHeight: "50vh", backgroundColor: "#DDFFDD" }}
+            style={{ minHeight: "50vh" }}
           >
             <div className={"col"}>
               <MyStats />
