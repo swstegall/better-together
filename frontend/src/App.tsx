@@ -1,6 +1,7 @@
 import React from "react";
 import { TeamStats } from "./components/teamstats/teamstats";
 import { MyStats } from "./components/mystats/mystats";
+import { Sidebar } from "./components/sidebar/sidebar";
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
           className={"col-3"}
           style={{ minHeight: "100vh", backgroundColor: "#DDDDFF" }}
         >
-          Sidebar
+          <Sidebar />
         </div>
         <div className={"col-9"}>
           <div
