@@ -12,7 +12,7 @@ const App = () => {
       <div className={"row"}>
         <div
           className={"col-3"}
-          style={{ minHeight: "100vh", backgroundColor: "#DDDDFF" }}
+          style={{ minHeight: "100vh", backgroundColor: "#FFFFFF" }}
         >
           <Sidebar />
         </div>
