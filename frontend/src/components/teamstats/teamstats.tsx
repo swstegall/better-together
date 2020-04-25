@@ -5,27 +5,21 @@ import { TeamStatsTable } from "./teamstatstable/teamstatstable";
 
 export const TeamStats = () => {
   return (
-    <div>
-      <div className={"container"} style={{ minHeight: '50vh' }}>
-            <div className={"row"}>
-                <div className={"col-4"}>
-                    <div className="row align-items-start">
-                    <h1>Team Stats</h1>
-                    <TeamStatsPie />
-                    </div>
-                </div>
-                <div className={"col-4"}>
-                    <div  className="row align-items-start">
-                    <h2>Team High Scores</h2>
-                    <TeamStatsBar />
-                    </div>
-                </div>
-                <div className={"col-4"}>
-                    <h3>Overall Team Scores</h3>
-                    <TeamStatsTable />
-                </div>
-            </div>
+    <div style={{backgroundColor: "#FFDDDD"}}>
+      <div className={"row no-gutters pt-5"}></div>
+      <div className={"row no-gutters pt-5"}></div>
+      <div className={"row no-gutters pt-4"}></div>
+      <div className={"row now-gutters pt-5"} style={{minHeight: "50vh"}}>
+        <div className={"col"}>
+          <TeamStatsPie />
         </div>
+        <div className={"col"}>
+          <TeamStatsBar />
+        </div>
+        <div className={"col"}>
+          <TeamStatsTable />
+        </div>
+      </div>
     </div>
   );
-}
+};

@@ -5,31 +5,19 @@ import { Sidebar } from "./components/sidebar/sidebar";
 
 const App = () => {
   return (
-    <div
-      className={"container-fluid"}
-      style={{ minHeight: "100vh", overflow: "hidden" }}
-    >
-      <div className={"row"}>
-        <div
-          className={"col-3"}
-          style={{ minHeight: "100vh", backgroundColor: "#FFFFFF" }}
-        >
+    <div className={"container-fluid px-0"} style={{minHeight: "100vh", maxHeight: "100vh", overflow: "hidden"}}>
+      <div className={"row no-gutters"}>
+        <div className={"col-3"}>
           <Sidebar />
         </div>
-        <div className={"col-9"}>
-          <div
-            className={"row"}
-            style={{ minHeight: "50vh" }}
-          >
-            <div className={"col"}>
+        <div className={"col"}>
+          <div>
+            <div>
               <MyStats />
             </div>
           </div>
-          <div
-            className={"row"}
-            style={{ minHeight: "50vh", backgroundColor: "#FFDDDD" }}
-          >
-            <div className={"col"}>
+          <div>
+            <div>
               <TeamStats />
             </div>
           </div>
@@ -37,6 +25,6 @@ const App = () => {
       </div>
     </div>
   );
-}
+};
 
 export default App;
